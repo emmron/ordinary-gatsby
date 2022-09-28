@@ -93,7 +93,7 @@ const HeaderTextGroup = styled.div`
   a {
   color: ${props => props.theme.color.pink};
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   }
 
   h1 {
@@ -104,6 +104,11 @@ const HeaderTextGroup = styled.div`
   h2 {
     margin-bottom: 24px;
     color: ${props => props.theme.color.accent};
+    font-family: ${props => props.theme.font.normal};
+  }
+  
+  nav a {
+      font-family: ${props => props.theme.font.normal};
   }
 
   p {

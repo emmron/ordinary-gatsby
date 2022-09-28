@@ -36,6 +36,11 @@ export const NavListWrapper = styled.div`
           margin: 0;
           margin-top: 0.75em;
         }
+        
+        button {
+            color: ${props => props.theme.color.pink};
+        }
+        
       `};
   }
 `
@@ -49,8 +54,8 @@ export const NavItem = styled.li`
     text-decoration: none;
     opacity: 0.9;
     color: ${props => props.theme.color.pink};
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
+    font-family: ${props => props.theme.font.medium};
+    font-weight: 600;
   }
 
   &.active {
