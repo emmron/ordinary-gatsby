@@ -22,10 +22,6 @@ module.exports = {
         // Setting this parameter is also optional
         respectDNT: true,
       },
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        output: `Poppins, sans-serif\:300,400,500,600,700,800,900`
-      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -33,6 +29,16 @@ module.exports = {
         name: `product`,
         path: `${__dirname}/src/images/product`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `limelight`,
+          `Poppins, sans-serif\:300,400,400i,700,800,900` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

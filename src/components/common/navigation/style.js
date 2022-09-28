@@ -49,6 +49,8 @@ export const NavItem = styled.li`
     text-decoration: none;
     opacity: 0.9;
     color: ${props => props.theme.color.pink};
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
   }
 
   &.active {

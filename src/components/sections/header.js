@@ -89,11 +89,11 @@ const HeaderTextGroup = styled.div`
     opacity: 0;
   }
   
- 
   
   a {
   color: ${props => props.theme.color.pink};
-  font-family: ${props => props.theme.font.poppins};
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
   }
 
   h1 {
