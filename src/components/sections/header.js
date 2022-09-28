@@ -91,7 +91,7 @@ const HeaderTextGroup = styled.div`
   
   
   a {
-  color: ${props => props.theme.color.pink};
+  color: ${props => props.theme.color.white.regular};
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   }
