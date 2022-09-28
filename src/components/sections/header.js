@@ -27,15 +27,13 @@ const Header = () => {
       <Container>
         <Flex>
           <HeaderTextGroup>
-            <Subtitle>Personal Finance</Subtitle>
+            <Subtitle>OA</Subtitle>
             <h1>
-              All your money,
+              Ordinary
               <br />
-              one account
             </h1>
             <h2>
-              We're building next generation personal finance tools. Sign up to
-              get early access.
+              We're an honest and upfront Digital Agency based in West Perth.
             </h2>
             <HeaderForm onSubmit={handleSubmit}>
               <HeaderInput placeholder="Your email" />
@@ -43,7 +41,7 @@ const Header = () => {
             </HeaderForm>
             <FormSubtitle>
               Already have a beta account?{" "}
-              <FormSubtitleLink to="/">Sign in</FormSubtitleLink>
+              <FormSubtitleLink to="/">Stay in the know</FormSubtitleLink>
             </FormSubtitle>
           </HeaderTextGroup>
           <ImageWrapper>
@@ -59,8 +57,9 @@ const Header = () => {
 export default Header
 
 const HeaderWrapper = styled.header`
-  background-color: #f8f8f8;
+  background-color: #000;
   padding: 160px 0 80px 0;
+  padding-bottom: 10rem;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
   @media (max-width: ${props => props.theme.screen.md}) {
@@ -68,7 +67,7 @@ const HeaderWrapper = styled.header`
 `
 const Subtitle = styled.h5`
   font-size: 16px;
-  color: ${props => props.theme.color.accent};
+  color: ${props => props.theme.color.pink};
   letter-spacing: 0px;
   margin-bottom: 16px;
 `
@@ -84,19 +83,29 @@ const HeaderTextGroup = styled.div`
       margin: 0 16px;
     }
   }
+  
+  h5 {
+    display: none;
+    opacity: 0;
+  }
+  
+  a {
+  color: ${props => props.theme.color.white.regular};
+  }
 
   h1 {
     margin: 0 0 24px;
-    color: ${props => props.theme.color.primary};
+    color: ${props => props.theme.color.white.regular};
   }
 
   h2 {
     margin-bottom: 24px;
-    ${props => props.theme.font_size.regular}
+    color: ${props => props.theme.color.accent};
   }
 
   p {
     margin-bottom: 48px;
+    color: ${props => props.theme.color.pink};
   }
 `
 
@@ -126,7 +135,7 @@ const FormSubtitle = styled.span`
 `
 
 const FormSubtitleLink = styled(Link)`
-  color: ${props => props.theme.color.secondary};
+  color: ${props => props.theme.color.white.regular};
   padding-bottom: 1px;
   margin-left: 8px;
   text-decoration: none;
@@ -171,7 +180,7 @@ const HeaderButton = styled.button`
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
-  background: ${props => props.theme.color.secondary};
+  background: ${props => props.theme.color.pink};
   border-radius: 4px;
   padding: 0px 40px;
   border-width: 0px;

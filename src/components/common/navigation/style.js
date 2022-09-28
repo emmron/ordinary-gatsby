@@ -48,7 +48,7 @@ export const NavItem = styled.li`
   a {
     text-decoration: none;
     opacity: 0.9;
-    color: ${props => props.theme.color.black.regular};
+    color: ${props => props.theme.color.pink};
   }
 
   &.active {
@@ -78,7 +78,7 @@ export const Brand = styled.div`
     padding: 0;
 
     a {
-      color: ${props => props.theme.color.black.regular};
+      color: ${props => props.theme.color.pink};
       text-decoration: none;
     }
   }
@@ -94,7 +94,7 @@ export const ActionsContainer = styled.div`
     font-family: ${props => props.theme.font.normal};
     ${props => props.theme.font_size.xsmall};
     color: white;
-    background: #098b8c;
+    background: ${props => props.theme.color.rose.regular};
     border-radius: 4px;
     padding: 10px 16px;
     text-transform: uppercase;

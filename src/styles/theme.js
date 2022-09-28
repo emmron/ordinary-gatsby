@@ -22,12 +22,17 @@ const theme = {
   },
 
   color: {
-    primary: "#071435",
+    primary: "#000",
     secondary: "#098c8c",
-    accent: "#cca86e",
+    accent: "#fff",
+    pink: "#fb72a7",
+    rose: {
+      "regular": "#fb72a7ad"
+    },
     background: {
       white: "#ffffff",
-      light: "#f8f8f8",
+      light: "#f29cbd",
+      dark: "#000000"
     },
     white: {
       regular: "#ffffff",

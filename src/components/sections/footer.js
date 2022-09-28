@@ -36,13 +36,13 @@ const Footer = () => (
       </FooterColumn>
     </FooterColumnContainer>
     <BrandContainer>
-      <Logo>Finance</Logo>
+      <Logo>Ordinary</Logo>
     </BrandContainer>
   </FooterWrapper>
 )
 
 const FooterWrapper = styled.footer`
-  background-color: white;
+  background-color: #fff;
   margin: 80px 0 0;
   padding: 0 0 80px;
 `
