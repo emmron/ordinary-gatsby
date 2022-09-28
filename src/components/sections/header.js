@@ -89,8 +89,11 @@ const HeaderTextGroup = styled.div`
     opacity: 0;
   }
   
+ 
+  
   a {
-  color: ${props => props.theme.color.white.regular};
+  color: ${props => props.theme.color.pink};
+  font-family: ${props => props.theme.font.poppins};
   }
 
   h1 {
@@ -172,7 +175,7 @@ const HeaderInput = styled.input`
 const HeaderButton = styled.button`
   font-weight: 500;
   font-size: 14px;
-  color: white;
+  color: ${props => props.theme.color.white.regular};
   letter-spacing: 1px;
   height: 60px;
   display: block;

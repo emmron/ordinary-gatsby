@@ -22,6 +22,10 @@ module.exports = {
         // Setting this parameter is also optional
         respectDNT: true,
       },
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        output: `Poppins, sans-serif\:300,400,500,600,700,800,900`
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,

@@ -9,6 +9,7 @@ const theme = {
     semibold: `'HK Grotesk Semibold'`,
     bold: `'HK Grotesk Bold'`,
     extrabold: `'HK Grotesk Extra Bold'`,
+    poppins: 'Poppins',
   },
   font_size: {
     xxxsmall: "font-size: 12px;",

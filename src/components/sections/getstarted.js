@@ -37,7 +37,7 @@ const GetStartedTitle = styled.h3`
 const TryItButton = styled.button`
   font-weight: 800;
   font-size: 14px;
-  color: #fff;
+  color: #fb72a7;
   letter-spacing: 1px;
   height: 60px;
   display: block;
