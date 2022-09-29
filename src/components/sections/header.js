@@ -29,6 +29,7 @@ const Header = () => {
           <HeaderTextGroup>
             <Subtitle>OA</Subtitle>
             <h1>
+
               Ordinary
               <br />
             </h1>
@@ -72,6 +73,9 @@ const Subtitle = styled.h5`
   margin-bottom: 16px;
 `
 
+const navLinks = styled.a`
+  color: ${props => props.theme.color.pink};
+`
 const HeaderTextGroup = styled.div`
   margin: 0;
 
@@ -87,6 +91,11 @@ const HeaderTextGroup = styled.div`
   h5 {
     display: none;
     opacity: 0;
+  }
+  
+  .oa__navlistWrapper a {
+    color: ${props => props.theme.color.pink};
+
   }
   
   

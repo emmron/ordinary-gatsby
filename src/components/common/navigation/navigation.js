@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
+import "./navigation.css"
 
 import { Container } from "../../global"
 import {
@@ -14,8 +15,11 @@ import {
   Mobile,
   ActionsContainer,
 } from "./style"
+import {Link} from "../../../../.cache/gatsby-browser-entry";
+import styled from "styled-components";
 
-const NAV_ITEMS = ["Services", "Contact"]
+const NAV_ITEMS = ["Home", "SEO", "Web", "PPC", "About", "Contact"]
+
 
 export default class Navigation extends Component {
   state = {
@@ -48,24 +52,19 @@ export default class Navigation extends Component {
     }
   }
 
-  getNavAnchorLink = item => (
-    <AnchorLink data-scroll href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
+  getNavAnchorLink = (item, item_url) => (
+
+    <AnchorLink data-scroll href={`#${item_url.toLowerCase()}`} onClick={this.closeMobileMenu}>
       {item}
     </AnchorLink>
   )
 
   getNavList = ({ mobile = false }) => (
-    <NavListWrapper mobile={mobile}>
-      <Scrollspy
-        items={NAV_ITEMS.map(item => item.toLowerCase())}
-        currentClassName="active"
-        mobile={mobile}
-        offset={-64}
-      >
-        {NAV_ITEMS.map(navItem => (
-          <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
-        ))}
-      </Scrollspy>
+    <NavListWrapper mobile={mobile} className="oa__navlistWrapper">
+      <Link to="/seo-perth/">SEO</Link>
+      <Link to="/ppc-perth/">PPC</Link>
+      <Link to="/web/">Web</Link>
+      <Link to="/about/">About</Link>
     </NavListWrapper>
   )
 
@@ -78,7 +77,7 @@ export default class Navigation extends Component {
           <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">
               <AnchorLink href="#top" onClick={this.closeMobileMenu}>
-                Ordinary
+                <Link to="/" className="front-page-link">Ordinary</Link>
               </AnchorLink>
             </Scrollspy>
           </Brand>
@@ -111,3 +110,7 @@ export default class Navigation extends Component {
     )
   }
 }
+
+const NavListWrappersLinks = styled.a`
+  color: {props => props.theme.color.pink};
+`
