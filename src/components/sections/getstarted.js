@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { Container, Section } from "../global"
 
 const GetStarted = () => (
-  <StyledSection>
+  <StyledSection id="about">
     <GetStartedContainer>
       <GetStartedTitle>SEO West Perth</GetStartedTitle>
       <TryItButton>Let's Talk</TryItButton>
