@@ -37,7 +37,7 @@ const Header = () => {
             </h2>
             <HeaderForm onSubmit={handleSubmit}>
               <HeaderInput placeholder="Your email" />
-              <HeaderButton>Early access</HeaderButton>
+              <HeaderButton>Sign Up</HeaderButton>
             </HeaderForm>
             <FormSubtitle>
               Already have a beta account?{" "}
@@ -93,7 +93,7 @@ const HeaderTextGroup = styled.div`
   a {
   color: ${props => props.theme.color.white.regular};
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   }
 
   h1 {

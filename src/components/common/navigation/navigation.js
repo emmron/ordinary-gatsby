@@ -42,6 +42,7 @@ export default class Navigation extends Component {
   }
 
   closeMobileMenu = () => {
+    console.log("here!!");
     if (this.state.mobileMenuOpen) {
       this.setState({ mobileMenuOpen: false })
     }
