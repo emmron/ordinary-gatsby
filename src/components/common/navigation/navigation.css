@@ -1,5 +1,8 @@
 .oa__navlistWrapper a {
     color: #fb72a7;
     font-weight: 900;
-    font-family: 'HK Grotesk Normal';
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
 }
