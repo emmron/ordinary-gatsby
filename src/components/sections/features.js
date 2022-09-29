@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { Section, Container } from "../global"
 
 const Features = () => (
-  <Section id="features">
+  <Section id="services">
     <StyledContainer>
       <SectionTitle>Services</SectionTitle>
       <FeaturesGrid>

@@ -49,7 +49,7 @@ export default class Navigation extends Component {
   }
 
   getNavAnchorLink = item => (
-    <AnchorLink href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
+    <AnchorLink data-scroll href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
       {item}
     </AnchorLink>
   )
