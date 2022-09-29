@@ -5,36 +5,6 @@ import { Container } from "../global"
 
 const Footer = () => (
   <FooterWrapper id="footer">
-    <FooterColumnContainer>
-      <FooterColumn>
-        <span>Features</span>
-        <ul>
-          <li>Automation</li>
-          <li>Rewards</li>
-        </ul>
-      </FooterColumn>
-      <FooterColumn>
-        <span>Resources</span>
-        <ul>
-          <li>Compare</li>
-          <li>Blog</li>
-        </ul>
-      </FooterColumn>
-      <FooterColumn>
-        <span>Company</span>
-        <ul>
-          <li>About Us</li>
-          <li>Careers</li>
-        </ul>
-      </FooterColumn>
-      <FooterColumn>
-        <span>Social</span>
-        <ul>
-          <li>LinkedIn</li>
-          <li>Instagram</li>
-        </ul>
-      </FooterColumn>
-    </FooterColumnContainer>
     <BrandContainer>
       <Logo>Ordinary</Logo>
     </BrandContainer>
@@ -43,8 +13,8 @@ const Footer = () => (
 
 const FooterWrapper = styled.footer`
   background-color: #fff;
-  margin: 80px 0 0;
-  padding: 0 0 80px;
+  margin: 20px 0 0;
+  padding: 0 0 10px;
 `
 
 const Logo = styled.div`
@@ -61,11 +31,13 @@ const Logo = styled.div`
   z-index: 9;
   text-decoration: none;
   outline: 0px;
+  transition: all 0.25s ease-in-out;
+  
 `
 
 const BrandContainer = styled(Container)`
   position: relative;
-  padding-top: 48px;
+  padding-top: 0;
   display: flex;
   align-items: flex-end;
 
@@ -86,13 +58,13 @@ const FooterColumn = styled.div`
   span {
     font-size: 16px;
     font-family: ${props => props.theme.font.bold};
-    color: ${props => props.theme.color.primary};
+    color: ${props => props.theme.color.pink};
   }
   ul {
     list-style: none;
     margin: 16px 0;
     padding: 0;
-    color: ${props => props.theme.color.black.regular};
+    color: ${props => props.theme.color.pink};
     li {
       margin-bottom: 12px;
       font-family: ${props => props.theme.font.normal};
