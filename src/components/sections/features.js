@@ -11,9 +11,6 @@ const Features = () => (
         <FeatureItem>
           <FeatureTitle>SEO</FeatureTitle>
           <FeatureText>
-            Receive budget and spending alerts based on your favorite triggers.
-          </FeatureText>
-          <FeatureText>
           Receive budget and spending alerts based on your favorite triggers.
         </FeatureText>
         </FeatureItem>
