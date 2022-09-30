@@ -16,3 +16,12 @@
     border-radius: 0;
     padding-bottom: 6px;
 }
+
+header span > a {
+    background: #f35190;
+    opacity: 1;
+    padding: 8px;
+    border-radius: 10px;
+    padding-bottom: 8px !important;
+    border-bottom: none !important;
+}
