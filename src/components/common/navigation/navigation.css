@@ -33,6 +33,7 @@ header span > a {
     padding: 8px;
     min-height: 43px;
     padding-bottom: 5px;
+    padding-top: 3px;
     display: block;
     text-align: center;
     vertical-align: middle;
