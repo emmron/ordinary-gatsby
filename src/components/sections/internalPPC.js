@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 import { Container } from "../global"
 
-const Header = () => {
+const PPCPerth = () => {
   const data = useStaticQuery(graphql`
       query {
           file(sourceInstanceName: { eq: "product" }, name: { eq: "green-skew" }) {
@@ -54,7 +54,7 @@ const Header = () => {
   )
 }
 
-export default Header
+export default PPCPerth
 
 const HeaderWrapper = styled.header`
   background-color: #000;
