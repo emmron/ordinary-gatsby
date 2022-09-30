@@ -29,7 +29,7 @@ const Header = () => {
           <HeaderTextGroup>
             <Subtitle>OA</Subtitle>
             <h1>
-              PPC Perth
+              SEO Perth
               <br />
             </h1>
             <h2>
