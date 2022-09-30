@@ -1,13 +1,13 @@
 
 const theme = {
   font: {
-    primary: `'HK Grotesk Normal'`,
-    secondary: `'HK Grotesk Medium'`,
+    primary: `'brevia, sans-serif'`,
+    secondary: `'brevia, sans-serif'`,
     light: `'HK Grotesk Light'`,
     normal: `'HK Grotesk Normal'`,
     medium: `'HK Grotesk Medium'`,
     semibold: `'HK Grotesk Semibold'`,
-    bold: `'HK Grotesk Bold'`,
+    bold: `brevia, sans-serif`,
     extrabold: `'HK Grotesk Extra Bold'`,
     poppins: 'Poppins',
   },
