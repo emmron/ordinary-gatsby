@@ -9,7 +9,7 @@ import Features from "../components/sections/features"
 import Footer from "../components/sections/footer"
 import GetStarted from "../components/sections/getstarted"
 import internalSEO from "../components/sections/internalSEO";
-import InternalPagePPC from "../components/sections/internalSEO";
+import InternalPagePPC from "../components/sections/internalPPC";
 
 const IndexPage = () => (
     <Layout>
