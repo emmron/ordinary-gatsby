@@ -13,11 +13,8 @@ import InternalPageSEO from "../components/sections/internalSEO";
 
 const IndexPage = () => (
     <Layout>
+      <Navigation />
             <InternalPageSEO />
-        <SEO title="SEO West Perth" />
-        <Navigation />
-        <Header />
-        <GetStarted />
         <Footer />
     </Layout>
 )
