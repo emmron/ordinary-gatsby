@@ -122,7 +122,8 @@ font-style: normal;
   h2 {
     margin-bottom: 24px;
     color: ${props => props.theme.color.accent};
-    font-family: ${props => props.theme.font.normal};
+    font-family: ${props => props.theme.font.bold};
+    font-weight: 400;
   }
   
   nav a {
