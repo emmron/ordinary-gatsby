@@ -19,7 +19,7 @@ const theme = {
     regular: "font-size: 22px; line-height: 30px;",
     large: "font-size: 28px; line-height: 30px;",
     larger: "font-size: 40px; line-height: 50px;",
-    xlarge: "font-size: 48px; line-height: 48px;",
+    xlarge: "font-size: 48px; line-height: 46px;",
   },
 
   color: {
