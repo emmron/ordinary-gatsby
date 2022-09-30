@@ -1,10 +1,10 @@
-import React, { Component } from "react"
-import AnchorLink from "react-anchor-link-smooth-scroll"
-import Scrollspy from "react-scrollspy"
-import { Menu, X } from "react-feather"
-import "./navigation.css"
+import React, { Component } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import Scrollspy from "react-scrollspy";
+import { Menu, X } from "react-feather";
+import "./navigation.css";
 
-import { Container } from "../../global"
+import { Container } from "../../global";
 import {
   Nav,
   NavItem,
@@ -13,51 +13,51 @@ import {
   NavListWrapper,
   MobileMenu,
   Mobile,
-  ActionsContainer,
-} from "./style"
-import {Link} from "../../../../.cache/gatsby-browser-entry";
+  ActionsContainer
+} from "./style";
+import { Link } from "../../../../.cache/gatsby-browser-entry";
 import styled from "styled-components";
 
-const NAV_ITEMS = ["Home", "SEO", "Web", "PPC", "About", "Contact"]
+const NAV_ITEMS = ["Home", "SEO", "Web", "PPC", "About", "Contact"];
 
 
 export default class Navigation extends Component {
   state = {
     mobileMenuOpen: false,
-    hasScrolled: false,
-  }
+    hasScrolled: false
+  };
 
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll)
+    window.addEventListener("scroll", this.handleScroll);
   }
 
   handleScroll = event => {
-    const scrollTop = window.pageYOffset
+    const scrollTop = window.pageYOffset;
 
     if (scrollTop > 32) {
-      this.setState({ hasScrolled: true })
+      this.setState({ hasScrolled: true });
     } else {
-      this.setState({ hasScrolled: false })
+      this.setState({ hasScrolled: false });
     }
-  }
+  };
 
   toggleMobileMenu = () => {
-    this.setState(prevState => ({ mobileMenuOpen: !prevState.mobileMenuOpen }))
-  }
+    this.setState(prevState => ({ mobileMenuOpen: !prevState.mobileMenuOpen }));
+  };
 
   closeMobileMenu = () => {
     console.log("here!!");
     if (this.state.mobileMenuOpen) {
-      this.setState({ mobileMenuOpen: false })
+      this.setState({ mobileMenuOpen: false });
     }
-  }
+  };
 
   getNavAnchorLink = (item, item_url) => (
 
     <AnchorLink data-scroll href={`#${item_url.toLowerCase()}`} onClick={this.closeMobileMenu}>
       {item}
     </AnchorLink>
-  )
+  );
 
   getNavList = ({ mobile = false }) => (
     <NavListWrapper mobile={mobile} className="oa__navlistWrapper">
@@ -66,10 +66,10 @@ export default class Navigation extends Component {
       <Link to="/web/">Web</Link>
       <Link to="/about/">About</Link>
     </NavListWrapper>
-  )
+  );
 
   render() {
-    const { mobileMenuOpen } = this.state
+    const { mobileMenuOpen } = this.state;
 
     return (
       <Nav {...this.props} scrolled={this.state.hasScrolled}>
@@ -107,10 +107,22 @@ export default class Navigation extends Component {
           )}
         </Mobile>
       </Nav>
-    )
+    );
   }
 }
-
+const HeaderTextGroup = styled.div`
+.oa__navlistWrapper a {
+color: #fb72a7;  
+    border: 3px solid #fb72a7c9;   
+    font-weight: 900;     
+ font-family: 'Poppins', sans-serif;     
+     text-decoration: none;        
+      margin-right: 0.6rem;    
+ margin-left: 0.6rem; 
+      padding: 0.3rem;     
+       border-radius: 13px;
+       }
+`
 const NavListWrappersLinks = styled.a`
   color: {props => props.theme.color.pink};
-`
+`;

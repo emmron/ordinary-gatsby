@@ -86,8 +86,15 @@ const HeaderTextGroup = styled.div`
   }
   
   .oa__navlistWrapper a {
-    color: ${props => props.theme.color.pink};
-
+color: ${props => props.theme.color.pink};
+    border: 3px solid #fb72a7c9;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    padding: 0.3rem;
+    border-radius: 13px;
   }
   
   

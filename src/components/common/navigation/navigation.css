@@ -1,8 +1,16 @@
 .oa__navlistWrapper a {
     color: #fb72a7;
-    font-weight: 900;
+    border: 3px solid #fb72a7c9;
+    font-weight: 600;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     margin-right: 0.6rem;
     margin-left: 0.6rem;
+    padding: 0.35rem;
+    border-radius: 13px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding-bottom: 6px;
 }
