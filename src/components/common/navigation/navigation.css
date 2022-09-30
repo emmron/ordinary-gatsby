@@ -24,3 +24,23 @@ header span > a {
     padding-bottom: 8px !important;
     border-bottom: none !important;
 }
+
+.front-page-link {
+    transition: all 0.25s ease-in-out;
+    color: #000000;
+    border: 3px solid #ff1e75;
+    border-radius: 50%;
+    padding: 8px;
+    min-height: 55px;
+    padding-bottom: 1px;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.jKIxLh .front-page-link {
+    color: #000000;
+    border:3px solid #000000;
+    border-radius: 50%;
+}

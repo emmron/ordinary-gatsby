@@ -78,6 +78,14 @@ const navLinks = styled.a`
 `
 const HeaderTextGroup = styled.div`
   margin: 0;
+  
+  .front-page-link {
+  border: 3px solid #ff488f;
+    border-radius: 47%;
+    padding: 8px;
+        padding-top: 3px;
+    padding-bottom: 8px;
+  }
 
   > div {
     width: 120%;
