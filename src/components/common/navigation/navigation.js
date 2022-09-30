@@ -62,10 +62,11 @@ export default class Navigation extends Component {
 
   getNavList = ({ mobile = false }) => (
     <NavListWrapper mobile={mobile} className="oa__navlistWrapper">
+      <Link to="/about/">About</Link>
       <Link to="/seo-perth/">SEO</Link>
       <Link to="/ppc-perth/">PPC</Link>
-      <Link to="/web/">Web</Link>
-      <Link to="/about/">About</Link>
+      <Link to="/web/">Web Design</Link>
+      <Link to="/contact-us/">Contact</Link>
     </NavListWrapper>
   );
 
@@ -78,11 +79,12 @@ export default class Navigation extends Component {
           <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">
               <AnchorLink href="#top" onClick={this.closeMobileMenu}>
-                <Link to="/" className="front-page-link">Ordinary</Link>
+                <Link to="/" className="front-page-link">oa</Link>
               </AnchorLink>
             </Scrollspy>
           </Brand>
-          <Mobile>
+
+        <Mobile>
             <button
               onClick={this.toggleMobileMenu}
               style={{ color: "black", background: "none" }}
@@ -96,9 +98,6 @@ export default class Navigation extends Component {
           </Mobile>
 
           <Mobile hide>{this.getNavList({})}</Mobile>
-          <ActionsContainer>
-            <button>Sign up</button>
-          </ActionsContainer>
         </StyledContainer>
         <Mobile>
           {mobileMenuOpen && (
