@@ -7,15 +7,15 @@ import { Container } from "../global"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
-    query {
-      file(sourceInstanceName: { eq: "product" }, name: { eq: "green-skew" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_tracedSVG
+      query {
+          file(sourceInstanceName: { eq: "product" }, name: { eq: "green-skew" }) {
+              childImageSharp {
+                  fluid(maxWidth: 1000) {
+                      ...GatsbyImageSharpFluid_tracedSVG
+                  }
+              }
           }
-        }
       }
-    }
   `)
 
   const handleSubmit = event => {
@@ -29,11 +29,11 @@ const Header = () => {
           <HeaderTextGroup>
             <Subtitle>OA</Subtitle>
             <h1>
-              Ordinary
+              SEO Perth
               <br />
             </h1>
             <h2>
-              We're an honest and upfront Digital Agency based in West Perth.
+              We love SEO and we will be lased focus on ranking your website 1st on Google
             </h2>
             <HeaderForm onSubmit={handleSubmit}>
               <HeaderInput placeholder="Your email" />

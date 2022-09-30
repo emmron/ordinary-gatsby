@@ -13,6 +13,9 @@ const Features = () => (
           <FeatureText>
             Receive budget and spending alerts based on your favorite triggers.
           </FeatureText>
+          <FeatureText>
+          Receive budget and spending alerts based on your favorite triggers.
+        </FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>PPC</FeatureTitle>
