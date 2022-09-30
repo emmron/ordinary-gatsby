@@ -28,16 +28,17 @@ header span > a {
 .front-page-link {
     transition: all 0.25s ease-in-out;
     color: #000000;
-    border: 3px solid #ff1e75;
+    border: 3px solid #ffffff;
     border-radius: 50%;
     padding: 8px;
     min-height: 43px;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
     padding-top: 3px;
     display: block;
     text-align: center;
     vertical-align: middle;
     align-items: center;
+    color: #ffffff !important;
 }
 
 .jKIxLh .front-page-link {
