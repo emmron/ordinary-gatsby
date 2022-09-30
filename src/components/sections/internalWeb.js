@@ -35,14 +35,7 @@ const PPCPerth = () => {
             <h2>
               We love SEO and we will be lased focus on ranking your website 1st on Google
             </h2>
-            <HeaderForm onSubmit={handleSubmit}>
-              <HeaderInput placeholder="Your email" />
-              <HeaderButton>Sign Up</HeaderButton>
-            </HeaderForm>
-            <FormSubtitle>
-              Already have a beta account?{" "}
-              <FormSubtitleLink to="/">Stay in the know</FormSubtitleLink>
-            </FormSubtitle>
+
           </HeaderTextGroup>
           <ImageWrapper>
             <StyledImage fluid={data.file.childImageSharp.fluid} />
