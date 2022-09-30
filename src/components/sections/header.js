@@ -127,7 +127,7 @@ font-style: normal;
   }
   
   nav a {
-      font-family: ${props => props.theme.font.normal};
+      font-family: ${props => props.theme.font.bold};
   }
 
   p {
