@@ -40,7 +40,10 @@ header span > a {
     align-items: center;
     color: #ffffff !important;
 }
-
+.inner-subtitle {
+    font-size: 22px;
+    color: white;
+}
 .jKIxLh .front-page-link {
     color: #000000;
     border:3px solid #000000;

@@ -34,13 +34,13 @@ const Header = () => {
             </h1>
             <h2>
               Search engine optimization can make or break your business's growth. SEO is how easily the right people can search for and find your websites
+
             </h2>
 
           </HeaderTextGroup>
-          <ImageWrapper>
-            <StyledImage fluid={data.file.childImageSharp.fluid} />
-            <br />
-          </ImageWrapper>
+          <h3 className="inner-subtitle">
+            Search engine optimization can make or break your business's growth. SEO is how easily the right people can search for and find your websites
+          </h3>
         </Flex>
       </Container>
     </HeaderWrapper>
