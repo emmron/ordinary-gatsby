@@ -41,8 +41,11 @@ header span > a {
     color: #ffffff !important;
 }
 .inner-subtitle {
-    font-size: 22px;
-    color: white;
+    margin-top: 5.5rem;
+    padding-left: 2rem;
+    text-align: right;
+    line-height: 32px;
+    font-family: 'BREVIA';
 }
 .jKIxLh .front-page-link {
     color: #000000;
