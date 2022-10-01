@@ -43,6 +43,15 @@ const Header = () => {
           </h3>
         </Flex>
       </Container>
+      <div className="seoWrapper">
+        <Flex>
+          <div className="longTermSEO white-center-text">
+            <h3>Long Term SEO</h3>
+            <p>We want to be your SEO company for the long term. Today's SEO goes beyond picking keywords, changing page titles and trying to rank on Google Page 1. We pull data from search console, Google Analytics, Ahrefs, and SEMRush to benchmark where your website is at, general SEO health, and what's needed to close the gap and crush your competitors.</p>
+          </div>
+        </Flex>
+      </div>
+
     </HeaderWrapper>
   )
 }
@@ -80,6 +89,7 @@ const HeaderTextGroup = styled.div`
     }
   }
   
+
   h5 {
     display: none;
     opacity: 0;

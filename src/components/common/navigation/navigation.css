@@ -55,3 +55,33 @@ header span > a {
     border-radius: 50%;
     color: #000;
 }
+
+.longTermSEO {
+    background: #fff;
+    text-align: center;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.longTermSEO p {
+    width: 41%;
+    line-height: 25px;
+}
+.seoWrapper {
+    min-height: 25rem;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: 600;
+    font-family: 'Brevia';
+}
+.seoWrapper > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
