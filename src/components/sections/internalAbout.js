@@ -33,8 +33,7 @@ const PPCPerth = () => {
               <br />
             </h1>
             <h2>
-              We love SEO and we will be lased focus on ranking your website 1st on Google
-            </h2>
+              Ordinary is a digital agency in West Perth focused entirely on long-term relationships, transparency and integrity with our clients and team            </h2>
 
           </HeaderTextGroup>
           <ImageWrapper>

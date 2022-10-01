@@ -33,7 +33,7 @@ const Header = () => {
               <br />
             </h1>
             <h2>
-              We love SEO and we will be lased focus on ranking your website 1st on Google
+              Search engine optimization can make or break your business's growth. SEO is how easily the right people can search for and find your websites
             </h2>
 
           </HeaderTextGroup>
