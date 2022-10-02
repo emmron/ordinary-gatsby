@@ -93,7 +93,8 @@ const SEOSteps = styled.div`
   
   .seoWrapper {
     font-family: 'Brevia';
-    
+    @media (max-width: ${props => props.theme.screen.sm}) {
+  } 
     @media (max-width: ${props => props.screen.sm }) {
       padding-top: 1rem;
       padding-bottom: 1rem;
