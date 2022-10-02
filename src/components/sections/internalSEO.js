@@ -77,7 +77,6 @@ const SEOProcess = styled.div`
 `
 const SEOSteps = styled.div`
   background-color: ${props => props.theme.pink};
-  min-height: 20rem;
   width: 100%;
   display: flex; 
   flex-direction: column;
@@ -94,7 +93,11 @@ const SEOSteps = styled.div`
   
   .seoWrapper {
     font-family: 'Brevia';
-  
+    
+    @media (max-width: ${props => props.screen.sm }) {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
   }
   
   > div {

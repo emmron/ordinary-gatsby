@@ -69,16 +69,7 @@ header span > a {
     width: 41%;
     line-height: 25px;
 }
-.seoWrapper {
-    min-height: 25rem;
-    width: 100%;
-    background: #fff;
-    display: flex;
-    padding-left: 0;
-    padding-right: 0;
-    font-weight: 600;
-    font-family: 'Brevia';
-}
+
 .seoWrapper > div {
     display: flex;
     flex-direction: column;
