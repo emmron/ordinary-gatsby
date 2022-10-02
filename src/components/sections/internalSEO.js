@@ -34,7 +34,6 @@ const Header = () => {
             </h1>
             <h2>
               Search engine optimization can make or break your business's growth. SEO is how easily the right people can search for and find your websites
-
             </h2>
 
           </HeaderTextGroup>
@@ -43,21 +42,53 @@ const Header = () => {
           </h3>
         </Flex>
       </Container>
-      <div className="seoWrapper">
-        <Flex>
-          <div className="longTermSEO white-center-text">
-            <h3>Long Term SEO</h3>
-            <p>We want to be your SEO company for the long term. Today's SEO goes beyond picking keywords, changing page titles and trying to rank on Google Page 1. We pull data from search console, Google Analytics, Ahrefs, and SEMRush to benchmark where your website is at, general SEO health, and what's needed to close the gap and crush your competitors.</p>
-          </div>
-        </Flex>
-      </div>
 
+      <SEOSteps>
+        <h3>Long Term SEO</h3>
+        <p>We want to be your SEO company for the long term. Today's SEO goes beyond picking keywords, changing page titles and trying to rank on Google Page 1. We pull data from search console, Google Analytics, Ahrefs, and SEMRush to benchmark where your website is at, general SEO health, and what's needed to close the gap and crush your competitors.</p>
+      </SEOSteps>
+      <SEOSteps>
+        <div className="seoWrapper">
+          <h2>Ordinary SEO is White Hat SEO</h2>
+          <ul>
+            <li>Stick to the guidelines and rules set out by Google</li>
+            <li>Prioritise winning over the user, not gaming the algorithm.</li>
+            <li>The long-term approach that has a lasting effect on a website vs quick wins and cheating the system.</li>
+          </ul>
+          <p>If you hear "Quick wins and SEO", stay away!
+            We don't do Black Hat SEO because it will make your website blacklisted on Google.</p>
+        </div>
+
+      </SEOSteps>
     </HeaderWrapper>
   )
 }
 
 export default Header
 
+const SEOProcess = styled.div`
+  background-color: ${props => props.theme.pink};
+  min-height: 20rem;
+  width: 100%;
+  display: flex;
+  text-align: center; 
+`
+const SEOSteps = styled.div`
+  background-color: ${props => props.theme.pink};
+  min-height: 20rem;
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Brevia';
+  
+  > div {
+    max-width: 80%;
+  }
+`
 const HeaderWrapper = styled.header`
   background-color: #000;
   padding: 160px 0 80px 0;
