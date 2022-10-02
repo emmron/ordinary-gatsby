@@ -87,6 +87,10 @@ const SEOSteps = styled.div`
   
   > div {
     max-width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 `
 const HeaderWrapper = styled.header`
