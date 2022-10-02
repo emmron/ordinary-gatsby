@@ -44,8 +44,10 @@ const Header = () => {
       </Container>
 
       <SEOSteps>
-        <h3>Long Term SEO</h3>
+        <div className="seoWrapper">
+        <h2>Long Term SEO</h2>
         <p>We want to be your SEO company for the long term. Today's SEO goes beyond picking keywords, changing page titles and trying to rank on Google Page 1. We pull data from search console, Google Analytics, Ahrefs, and SEMRush to benchmark where your website is at, general SEO health, and what's needed to close the gap and crush your competitors.</p>
+        </div>
       </SEOSteps>
       <SEOSteps>
         <div className="seoWrapper">
@@ -84,6 +86,16 @@ const SEOSteps = styled.div`
   background-color: #fff;
   color: #000;
   font-family: 'Brevia';
+  
+  
+  p, h2, h3 {
+    text-align: center;
+  }
+  
+  .seoWrapper {
+    font-family: 'Brevia';
+  
+  }
   
   > div {
     max-width: 80%;
