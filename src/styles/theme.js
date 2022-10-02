@@ -53,6 +53,12 @@ const theme = {
     md: "991px",
     lg: "1199px",
   },
+  colSize:{
+    half: "50%",
+    third: "33%",
+    quarter: "25%",
+  }
+
 }
 
 export default theme
